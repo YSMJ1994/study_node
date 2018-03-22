@@ -13,6 +13,7 @@ const server = http.createServer(function(request, response) {
     console.log('request parse url: ', parseUrl)
     if(pathName.startsWith('/download')) {
         let queryString = parseUrl.query
+        
     }
     response.writeHead(200, {'Content-Type': 'text/html'})
     response.end('<h1>Hello World!</h1>')
